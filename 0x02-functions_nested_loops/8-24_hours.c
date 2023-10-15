@@ -2,7 +2,7 @@
 
 /**
   * jack_bauer - The function print every minute of the day of jack bauer,
-  * starting from 00:00 to 23:59 
+  * starting from 00:00 to 23:59
   * Return : This return nothing
   */
 
