@@ -1,19 +1,60 @@
 #include "main.h"
 
 /**
+  *_printf - a function to print k
+  *@k: variable
+  * Return: void
+  */
+void _printf(int k)
+{
+	_putchar(k / 10 + '0');
+	_putchar(k % 10 + '0');
+	_putchar(',');
+	_putchar(' ');
+}
+
+/**
+    *_yusuf - a function to print k
+     *@k: variable
+     * Return: void
+     */
+
+void _yusuf(int k)
+{
+	_putchar(' ');
+	_putchar(k + '0');
+	_putchar(',');
+	_putchar(' ');
+}
+/**
+  *semiu - a function to print k
+  *@k: variable
+  * Return: void
+  */
+void semiu(int k)
+{
+	_putchar(k + '0');
+	_putchar(',');
+	_putchar(' ');
+}
+/**
+  *ruka - a function to print k
+  *@k: variable
+  * Return: void
+  */
+void ruka(int k)
+{
+	_putchar(k / 10 + '0');
+	_putchar(k % 10 + '0');
+}
+
+/**
   *times_table - this function print the 9 times table
-  *
+  *_printf - a function to print k
   *Return: 0
   */
-
 void times_table(void)
 {
-	/*Declare your variable*/
-	/*create a loop to print 10 columns*/
-	/*create a loop to print 10 rows*/
-	/*The multiplication value will be row *columns*/
-	/* let i be the column and j be the row*/
-	/*let k be the result*/
 	int i, j, k;
 
 	for (i = 0 ; i < 10 ; i++)
@@ -25,25 +66,18 @@ void times_table(void)
 			{
 				if (j == 9)
 				{
-					_putchar(k / 10 + '0');
-					_putchar(k % 10 + '0');
+					ruka(k);
 				}
 				else
 				{
-					_putchar(k / 10 + '0');
-					_putchar(k % 10 + '0');
-					_putchar(',');
-					_putchar(' ');
+					_printf(k);
 				}
-
 			}
 			else
 			{
 				if (j == 0)
 				{
-					_putchar(k + '0');
-					_putchar(',');
-					_putchar(' ');
+					semiu(k);
 				}
 				else if (j == 9)
 				{
@@ -52,15 +86,10 @@ void times_table(void)
 				}
 				else
 				{
-					_putchar(' ');
-					_putchar(k + '0');
-					_putchar(',');
-					_putchar(' ');
+					_yusuf(k);
 				}
-				
 			}
 		}
-		
 		_putchar('\n');
 	}
 }
