@@ -2,7 +2,8 @@
 
 /**
  * add - add two variable
- *
+ *@a: variable type
+ *@b: variable type
  *Return: result
  **/
 
