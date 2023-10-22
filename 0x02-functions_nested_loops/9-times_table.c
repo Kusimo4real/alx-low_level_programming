@@ -23,27 +23,44 @@ void times_table(void)
 			k = i * j;
 			if (k > 9)
 			{
-				_putchar(k / 10 + '0');
-				_putchar(k % 10 + '0');
-				_putchar
+				if (j == 9)
+				{
+					_putchar(k / 10 + '0');
+					_putchar(k % 10 + '0');
+				}
+				else
+				{
+					_putchar(k / 10 + '0');
+					_putchar(k % 10 + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
+
 			}
 			else
 			{
-				_putchar(k + '0');
+				if (j == 0)
+				{
+					_putchar(k + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
+				else if (j == 9)
+				{
+					_putchar(' ');
+					_putchar(k + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(k + '0');
+					_putchar(',');
+					_putchar(' ');
+				}
+				
 			}
-			if (k > 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-			}
-			else if (k > 9 && j < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			
 		}
+		
 		_putchar('\n');
-}
+	}
 }
