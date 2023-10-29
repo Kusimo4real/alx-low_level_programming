@@ -7,6 +7,7 @@
   **/
 int main(void)
 {
+	
 	unsigned long int first_number = 1;
 	unsigned long int second_number = 2;
 	unsigned long int next;
