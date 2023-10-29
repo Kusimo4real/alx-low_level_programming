@@ -10,11 +10,11 @@ int main(void)
 {
 	int first_number = 0;
 	int second_number = 1;
-	int next = 0; 
-	int sum = 0 ;
+	int next;
+	int sum = 0;
 	int limit = 4000000;
 
-	for (next; next <= limit ; next++)
+	for (next = 0; next <= limit ; next++)
 	{
 		next = first_number + second_number;
 		first_number = second_number;
