@@ -14,14 +14,14 @@ int main(void)
 
 	printf("%lu, ", first_number);
 
-	for (i = 0 ; i < 98  ; i++)
+	for (i = 0 ; i <= 98  ; i++)
 	{
 		printf("%lu", second_number);
 		next = first_number + second_number;
 		first_number = second_number;
 		second_number = next;
 
-		if (i != 97)
+		if (i != 98)
 		{
 			printf(", ");
 		}
