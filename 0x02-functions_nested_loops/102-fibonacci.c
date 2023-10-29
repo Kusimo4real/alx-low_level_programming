@@ -21,7 +21,7 @@ int main(void)
 		next = first_number + second_number;
 		first_number = second_number;
 		second_number = next;
-		if (i != 9)
+		if (i != 49)
 		{
 			printf(", ");
 		}
