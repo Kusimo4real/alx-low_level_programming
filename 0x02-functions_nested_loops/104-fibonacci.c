@@ -7,19 +7,21 @@
   **/
 int main(void)
 {
-	unsigned long int first_number = 0;
-	unsigned long int second_number = 1;
+	unsigned long int first_number = 1;
+	unsigned long int second_number = 2;
 	unsigned long int next;
 	int i;
 
-	for (i = 0 ; i <= 98 ; i++)
+	printf("%lu, ", first_number);
+
+	for (i = 0 ; i < 98  ; i++)
 	{
+		printf("%lu", second_number);
 		next = first_number + second_number;
 		first_number = second_number;
 		second_number = next;
 
-		printf("%lu", next);
-		if (i != 98)
+		if (i != 97)
 		{
 			printf(", ");
 		}
