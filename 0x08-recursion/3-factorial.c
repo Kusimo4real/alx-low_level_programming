@@ -3,8 +3,8 @@
 /**
  * factorial - This function prints the factorial of any
  *  value that is been passed into it
- * @n:This is the parameter that is been passed into the function
- * Return : 0
+ * @n: This is the parameter that is been passed into the function
+ * Return: 0
  */
 
 int factorial(int n)
