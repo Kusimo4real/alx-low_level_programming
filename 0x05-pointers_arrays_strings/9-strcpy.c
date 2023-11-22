@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - this function copy the content of the src to dest
- * @dest = the destination to copy to
+ * @dest: the destination to copy to
  * @src: the src file to copy from
  * Return: dest
  */
