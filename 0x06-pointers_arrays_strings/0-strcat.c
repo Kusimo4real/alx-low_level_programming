@@ -9,31 +9,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int destlen = 0;
-	int destsrc = 0;
+	int i, j;
 
 	/*calculate the length of the dest*/
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
-		dest++;
-		destlen = destlen + i;
+		;
 	}
-	/*calculate the length of the src*/
-
-	for (i = 0; src[i] != '\0'; i++)
+	for (j = 0; src[j] != 0; j++)
 	{
-		src++;
-		destsrc = destsrc + i;
+		dest[i] = src[j];
+		i++;
 	}
+	dest[i] = '\0';
 
-	/*to concatenate the string*/
-
-	for (i = 0; destlen >= i; i++)
-	{
-		dest[destlen + i] = src[i];
-	}
 	return (dest);
 }
 
