@@ -9,7 +9,7 @@ char *cap_string(char *s)
 {
 	int i, j;
 
-	char SW[] = " \t \n , ;.!?"() { } "; /*string literals*/
+	char SW[] = " \t \n , ;.!?\"() { } "; /*string literals*/
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
