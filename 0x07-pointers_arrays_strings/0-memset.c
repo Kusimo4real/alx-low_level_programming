@@ -6,7 +6,7 @@
  * @s: the dest, where our data is stored in
  * @b: The src from where it is copied from
  * @n: the number of byte
- * return: the destination where it is been copied from
+ * Return: the destination where it is been copied from
  */
 
 char *_memset(char *s, char b, unsigned int n)
