@@ -22,6 +22,7 @@ char *_strchr(char *s, char c)
 			g = &s[i];
 			return (g);
 		}
+		return (0);
 	}
 	return (s);
 }
