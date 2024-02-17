@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	char *ptr;
 	int i;
-	int size;
+	int size = 0;
 	int j;
 
 	/*loop through to get the alue of the size*/
