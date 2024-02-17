@@ -14,6 +14,9 @@ char *_strdup(char *str)
 	int size = 0;
 	int j;
 
+	if (str == NULL)
+		return (NULL);
+
 	/*loop through to get the alue of the size*/
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -22,8 +25,6 @@ char *_strdup(char *str)
 
 	ptr = malloc((sizeof(char) * size) + 1);
 
-	if (str == NULL)
-		return (NULL);
 	if (ptr == 0)
 		return (NULL);
 
