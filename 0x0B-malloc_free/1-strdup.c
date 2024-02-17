@@ -11,7 +11,6 @@ char *_strdup(char *str)
 {
 	char *ptr;
 	int i;
-	int size = 0;
 	int j;
 
 	if (str == NULL)
@@ -19,11 +18,10 @@ char *_strdup(char *str)
 
 	/*loop through to get the alue of the size*/
 	for (i = 0; str[i] != '\0'; i++)
-	{
-		size += i;
-	}
+		;
+	
 
-	ptr = malloc((sizeof(char) * size) + 1);
+	ptr = malloc((sizeof(char) * i) + 1);
 
 	if (ptr == 0)
 		return (NULL);
